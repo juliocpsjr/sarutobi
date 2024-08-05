@@ -7,26 +7,38 @@
 
 {% block conteudo%}
 <div class="container">
-    <p class="display-4">Orçamentos da empresa</p>
-    <div class="container p-5">
+    <p class="display-4">Orçamento</p>
+    <img class="img-thumbnail float-end ms-10" src="{% static 'img/madara_4.png'%}" alt="madara_form" style="width: 30%;">
+    <div class="container p-5 bg-dark ms-2 mb-5 rounded col-5">
         <form>
             <div class="mb-3">
-                <label for="email" class="form-label" >E-mail</label>
-                <input type="email" id="email" class="form-control w-50" placeholder="Digite seu e-mail">
+                <label for="nome" class="form-label text-light" >Nome</label>
+                <input type="text" class="form-control" placeholder="Digite seu nome" id="nome">
+                <div></div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label text-light" >E-mail</label>
+                <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail">
                 <div class="form-text">Nunca compartilharemos seu email com terceiros</div>
             </div>
             <div class="mb-3">
-                <label for="senha" class="form-label">Senha</label>
-                <input type="text" id="senha" class="form-control w-50"  placeholder="Digite sua senha" >
+                <label for="empresa" class="form-label text-light">Empresa</label>
+                <input type="text" class="form-control" placeholder="Digite o nome da empresa" id="empresa">
                 <div></div>
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" id="lembrar" class="form-check-input">
-                <label for="lembrar" class="form-check-label"> Lembrar de mim</label>
+            <div class="mb-3">
+                <label for="telefone" class="form-label text-light">Telefone</label>
+                <input type="number" class="form-control" placeholder="Digite seu telefone" id="telefone">
+                <div class="form-text">(xx)xxxxx-xxxx</div>
+            </div>
+            <div class="mb-3">
+                <label for="motivo" class="form-label text-light">Comentário</label>
+                <textarea type="text" class="form-control" id="motivo" rows="10" cols="40"></textarea>
                 <div></div>
             </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button type="submit" class="btn btn-danger">Enviar</button>
         </form>
     </div>
+    
 </div>
 {% endblock %}

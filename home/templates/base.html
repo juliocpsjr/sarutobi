@@ -10,7 +10,7 @@
     <script src="{% static 'js/bootstrap.bundle.min.js' %}" defer></script>
     <link rel="icon" href="{% static 'img/favicon.png'%}" type="image/x-icon" style="width: 10%;">
     {% block title%}
-    <title>Sarotubi</title>
+    <title>Mangekyou</title>
     {% endblock %}
 </head>
 <body>
@@ -21,22 +21,22 @@
         </li>
         <li class="nav-item mt-3">
             <button type="button" class="btn btn-dark">
-                <a href="{% url 'index' %}" class="nav-link active text-light">Home</a>
+                <a href="{% url 'index' %}" class="nav-link active text-light" style="font-size: 1.5em;">Home</a>
             </button>
         </li>
         <li class="nav-item mt-3">
             <button type="button" class="btn btn-dark">
-                <a href="{% url 'projects' %}" class="nav-link text-light">Projects</a>
+                <a href="{% url 'projects' %}" class="nav-link text-light" style="font-size: 1.5em;">Projects</a>
             </button>
         </li>
         <li class="nav-item mt-3">
             <button type="button" class="btn btn-dark">
-                <a href="{% url 'budget' %}" class="nav-link text-light">Budget</a>
+                <a href="{% url 'budget' %}" class="nav-link text-light" style="font-size: 1.5em;">Budget</a>
             </button>
         </li>
         <li class="nav-item mt-3">
             <button type="button" class="btn btn-dark">
-                <a href="{% url 'about' %}" class="nav-link text-light">About</a>
+                <a href="{% url 'about' %}" class="nav-link text-light" style="font-size: 1.5em;">About</a>
             </button>
         </li>
     </ui>

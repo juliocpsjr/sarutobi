@@ -15,27 +15,27 @@
 </head>
 <body>
     {% block navegacao %}
-    <ui id="navlinks" class="nav justify-content-center bg-dark" style="text-decoration: none;">
+    <ui id="navlinks" class="nav justify-content-center bg-dark">
         <li class="nav-item mt-3 mb-3">
             <img src="{% static 'img/madara_nav.png'%}" style="width: 40%;" alt="nav_img" ></img>
         </li>
         <li class="nav-item mt-3">
-            <button type="button" class="btn btn-dark">
-                <a href="{% url 'index' %}" class="nav-link active text-light" style="font-size: 1.5em;">Home</a>
+            <button type="button" class="btn btn-dark rounded">
+                <a id="home" href="{% url 'index' %}" class="nav-link active text-light" style="font-size: 1.5em;">Home</a>
             </button>
         </li>
         <li class="nav-item mt-3">
-            <button type="button" class="btn btn-dark">
+            <button type="button" class="btn btn-dark  rounded">
                 <a href="{% url 'projects' %}" class="nav-link text-light" style="font-size: 1.5em;">Projects</a>
             </button>
         </li>
         <li class="nav-item mt-3">
-            <button type="button" class="btn btn-dark">
+            <button type="button" class="btn btn-dark  rounded">
                 <a href="{% url 'budget' %}" class="nav-link text-light" style="font-size: 1.5em;">Budget</a>
             </button>
         </li>
         <li class="nav-item mt-3">
-            <button type="button" class="btn btn-dark">
+            <button type="button" class="btn btn-dark  rounded">
                 <a href="{% url 'about' %}" class="nav-link text-light" style="font-size: 1.5em;">About</a>
             </button>
         </li>

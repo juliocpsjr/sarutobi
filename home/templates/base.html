@@ -40,28 +40,28 @@
 </head>
 <body>
     {% block navegacao %}
-    <ui id="navlinks" class="nav justify-content-center">
-        <li class="nav-item mt-3 mb-3">
-            <img src="{% static 'img/madara_nav.png'%}" style="width: 40%;" alt="nav_img" ></img>
+    <ui id="navlinks" class="nav ms-sm-auto justify-content-lg-center">
+        <li class="nav-item ms-sm-3 mt-sm-2 mt-lg-3 mb-lg-3">
+            <img class="w-50 " src="{% static 'img/madara_nav.png'%}"  alt="nav_img" ></img>
         </li>
-        <li class="nav-item mt-3">
+        <li class="nav-item  mt-lg-3 ">
             <button type="button"  id="button_1"class="btn rounded">
-                <a id="home" href="{% url 'index' %}" class="nav-link active text-light" style="font-size: 1.5em;">Home</a>
+                <a id="home" href="{% url 'index' %}" class="nav-link active text-light fs-4">Home</a>
             </button>
         </li>
-        <li class="nav-item mt-3">
+        <li class="nav-item  mt-lg-3">
             <button type="button"  id="button_2"class="btn rounded">
-                <a href="{% url 'projects' %}" class="nav-link text-light" style="font-size: 1.5em;">Projects</a>
+                <a href="{% url 'projects' %}" class="nav-link text-light fs-4" >Projects</a>
             </button>
         </li>
-        <li class="nav-item mt-3">
+        <li class="nav-item  mt-lg-3">
             <button type="button"  id="button_3"class="btn rounded">
-                <a href="{% url 'budget' %}" class="nav-link text-light" style="font-size: 1.5em;">Budget</a>
+                <a href="{% url 'budget' %}" class="nav-link text-light fs-4 " >Budget</a>
             </button>
         </li>
-        <li class="nav-item mt-3">
+        <li class="nav-item   mt-lg-3">
             <button type="button"  id="button_4"class="btn rounded">
-                <a href="{% url 'about' %}" class="nav-link text-light" style="font-size: 1.5em;">About</a>
+                <a href="{% url 'about' %}" class="nav-link text-light fs-4 " >About</a>
             </button>
         </li>
     </ui>
